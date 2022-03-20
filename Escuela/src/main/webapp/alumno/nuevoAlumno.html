@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Escuela Web</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="./../css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    </head>
+
+    <body>
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="../index.html" class="brand-logo">Escuela Web</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../carrera/nuevaCarrera.html">Agregar Carrera</a></li>
+                    <li><a href="nuevoAlumno.html">Agregar Alumno</a></li>
+                    <li><a href="../ListadoCarreraServlet">Lista de Carreras</a></li>
+                    <li><a href="../ListadoAlumnoServlet">Lista de Alumnos</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../carrera/nuevaCarrera.html">Agregar Carrera</a></li>
+                    <li><a href="nuevoAlumno.html">Agregar Alumno</a></li>
+                    <li><a href="../ListadoCarreraServlet">Lista de Carreras</a></li>
+                    <li><a href="../ListadoAlumnoServlet">Lista de Alumnos</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+
+        <header class="container">
+
+            <h1>
+                Datos del Alumno
+            </h1>
+        </header>
+        <main>
+
+            <article class="container align-self-center" >
+                <!-- ProyectoBase_V1-->
+                <form method="post" action="/Escuela/AgregarAlumnoServlet" name="frmDatos">
+                        <div class="mb-3">
+                            <label for="txtNombreAlumno" class="form-label"><h5>Nombre Alumno</h5></label> 
+                            <input type="text" name="txtNombreAlumno" id="txtNombreAlumno"
+                                   placeholder="Nombre del alumno"
+                                   class="form-control"
+                                   required
+                                   maxlength="50"/>
+                        </div>
+                        <div>
+                            <label for="txtApellidoPat" class="form-label"><h5>Apellido paterno</h5></label> 
+                            <input name="txtApellidoPat" id="txtApellidoPat"
+                                   placeholder="Apellido paterno"
+                                   maxlength="100"
+                                   required
+                                   class="form-control"
+                                   />
+                        </div>
+                        <div>
+                            <label for="txtApellidoMat" class="form-label"><h5>Apellido Materno</h5></label> 
+                            <input name="txtApellidoMat" id="txtApellidoMat"
+                                   placeholder="Apellido materno"
+                                   maxlength="100"
+                                   required
+                                   class="form-control"
+                                   />
+                        </div>
+                        <div>
+                            <label for="txtMail" class="form-label"><h5>Correo</h5></label> 
+                            <input name="txtMail" id="txtMail"
+                                   placeholder="Correo electronico"
+                                   maxlength="100"
+                                   required
+                                   class="form-control"
+                                   />
+                        </div>
+                        <div>
+                            <label for="idCarrera" class="form-label"><h5>ID carrera</h5></label> 
+                            <input name="idCarrera" id="idCarrera"
+                                   placeholder="Id de la carrera"
+                                   type="number"
+                                   required
+                                   class="form-control"
+                                   />
+                        </div>
+                        <div class="mb-3"></div>
+
+                        <input type="submit" name="cmdEnviar" value="Enviar" class="btn btn-outline-primary"/>
+
+                    </form>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>

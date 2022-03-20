@@ -1,0 +1,92 @@
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #006699;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.page-footer , .btn-large{
+    background-color: #006699;
+}
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+ }
+ 
+ .btn{
+     background-color: #006699;
+ }
+ 
+ .btn:hover{
+     background-color: #0099cc;
+ }
+ 
+ a.danger{
+     background-color: white;
+     border-color: red;
+     color:red;
+ }
+ 
+ a.danger:hover{
+     background-color: #ff9999;
+ }
+ 
+  a.success{
+     background-color: white;
+     border-color: green;
+     color: #00cc33;
+ }
+ 
+  a.success:hover{
+      background-color: #ccff99;
+ }
+ a.big-margin{
+     margin-right: 80px;
+     margin-left: 80px;
+ }
