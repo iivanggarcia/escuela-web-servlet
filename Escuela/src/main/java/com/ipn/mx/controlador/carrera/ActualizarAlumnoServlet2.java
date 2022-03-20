@@ -33,7 +33,7 @@ public class ActualizarAlumnoServlet2 extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<meta charset='UTF-8'>");
-            out.println("<title>Lista de Carreras</title>");
+            out.println("<title>Actualizar Alumno</title>");
             out.println("<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>");
             out.println("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>");
             out.println("<link href='./css/styles.css' rel='stylesheet'/>");

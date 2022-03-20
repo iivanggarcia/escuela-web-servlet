@@ -45,27 +45,6 @@ public class ActualizarDatosAlumno extends HttpServlet {
             out.println("<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.4/css/all.css' />");
             out.println("</head>");
             out.println("<body>");
-            out.println("<div class='container'>																																													");
-            out.println("            <nav class='navbar navbar-expand-lg navbar-light bg-light'>																																	");
-            out.println("                <div class='container-fluid'>                                                                                                                                                              ");
-            out.println("                    <a class='navbar-brand' href='./'>Escuela</a>                                                                                                                                           ");
-            out.println("                    <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>     ");
-            out.println("                        <span class='navbar-toggler-icon'></span>                                                                                                                                          ");
-            out.println("                    </button>                                                                                                                                                                              ");
-            out.println("                    <div class='collapse navbar-collapse' id='navbarNav'>                                                                                                                                  ");
-            out.println("                        <ul class='navbar-nav'>                                                                                                                                                            ");
-            out.println("                            <li class='nav-item'>                                                                                                                                                          ");
-            out.println("                                <a class='nav-link' href='./carrera/nuevo.html'>Agregar Carrera</a>                                                                                                        ");
-            out.println("                                <!-- <a class='nav-link' href='./CarreraServlet'>Carrera</a>-->                                                                                                            ");
-            out.println("                            </li>                                                                                                                                                                          ");
-            out.println("                            <li class='nav-item'>                                                                                                                                                          ");
-            out.println("                                <a class='nav-link' href='ListadoServlet'>Listado de Carreras</a>                                                                                                          ");
-            out.println("                            </li>                                                                                                                                                                          ");
-            out.println("                        </ul>                                                                                                                                                                              ");
-            out.println("                    </div>                                                                                                                                                                                 ");
-            out.println("                </div>                                                                                                                                                                                     ");
-            out.println("            </nav>                                                                                                                                                                                         ");
-            out.println("</div>");
 
             out.println("<div class='container'>");
             out.println("<h1>Actualizando Datos</h1>");

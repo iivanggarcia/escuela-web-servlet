@@ -38,10 +38,11 @@ public class Alumno {
     public Alumno(){
     }
     
+    
     private void obtenerConexion() {
         //obtener conexion
-//        String usuario = "root";
-//        String clave = "root";
+//        String usuario = "deb";
+//        String clave = "password123";
 //        String url = "jdbc:mysql://localhost:3306/EscuelaWeb?serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&useSSL=false";
         //String url = "jdbc:mysql://localhost:3306/EscuelaWeb?
         //serverTimeZone=America/Mexico_City&allowPublicKeyRetrieval=true&
@@ -52,8 +53,7 @@ public class Alumno {
         try {
             Class.forName(driverBD);
             //DirverManager, carga el Driver
-             conexion
-                    = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            conexion = DriverManager.getConnection(URL, USERNAME, PASSWORD);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(CarreraDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -157,8 +157,8 @@ public class Alumno {
         List lista = null;
         try {
             ps = conexion.prepareStatement(SQL_SELECT);
-            ps.setLong(1, dto.getEntidad().getIdCarrera());
-            rs = ps.executeQuery();
+            ps.setLong(1, dto.getEntidad().getIdAlumno());
+                rs = ps.executeQuery();
             lista = obtenerResultados(rs);
             if (!lista.isEmpty()){
                 return (AlumnoDTO) lista.get(0);
